@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/83f4286022.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="header-brand" href="./index.html">Blog</a>
+        <div class="header-menu">
+          <ul>
+            <li>
+              <a href="./index.html" class="header-nav active">Accueil</a>
+            </li>
+            <li>
+              <a href="./form.html" class="header-nav">Créer un article</a>
+            </li>
+          </ul>
+          <div class="header-menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <form>
+          <h2 class="title-underline">Ajouter un article</h2>
+          <div class="form-group">
+            <label>Auteur</label>
+            <input type="text" name="author" />
+          </div>
+          <div class="form-group">
+            <label>Image de profil</label>
+            <input type="text" name="img" />
+          </div>
+          <div class="form-group">
+            <label>Categorie</label>
+            <input type="text" name="category" />
+          </div>
+          <div class="form-group">
+            <label>titre</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="form-group">
+            <label>Article</label>
+            <textarea name="content"></textarea>
+          </div>
+          <ul class="text-error" id="errors"></ul>
+          <div class="form-btn-container">
+            <button type="button" class="btn btn-secondary">Annuler</button>
+            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+          </div>
+        </form>
+      </div>
+      <footer>© blog</footer>
+    </div>
+  </body>
+</html>
